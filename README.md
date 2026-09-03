@@ -142,7 +142,9 @@ JWT_SECRET=aB3dE5fG7hI9jK1lM3nO5pQ7rS9tU1vW=
 
 La aplicacion incluye un archivo `src/main/resources/data.sql` con datos de prueba: 25 productos, 14 usuarios, 10 categorias, 11 marcas y 3 carritos. Elegi **una** de las siguientes opciones:
 
-#### Opcion A: Poblacion automatica al ejecutar la app (recomendada para principiantes)
+#### Opcion A: Poblacion automatica al ejecutar la app (recomendada para principiantes) 
+
+### (Esta es la opción por defecto configurada)
 
 Abre el archivo `src/main/resources/application.yml` con un editor de texto y verifica que esta configurado asi:
 
@@ -240,7 +242,7 @@ Abre tu navegador y verifica que la aplicacion este funcionando:
 
 #### Credenciales de prueba
 
-El script `data.sql` crea un usuario administrador necesario para gestionar usuarios, productos, categorias y marcas desde la aplicacion:
+El script `data.sql` crea un usuario administrador necesario para gestionar usuarios, productos, categorias y marcas desde la el BackOffice de administración de la aplicacion:
 
 | Usuario | Email | Contrasena | Rol |
 |---|---|---|---|
