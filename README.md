@@ -3,6 +3,7 @@
 API REST para tienda en linea construida con Spring Boot y Clean Architecture.
 
 > El front end se encuentra en el repositorio https://github.com/MarceloBravo/frontend_hitoFinal.git
+
 > La aplicación completa frontend y backend se encuentran en el monorepositorio https://github.com/MarceloBravo/hitoFinal.git
 
 ## Stack
