@@ -2,6 +2,8 @@
 
 API REST para tienda en linea construida con Spring Boot y Clean Architecture.
 
+> El front end se encuentra en el repositorio https://github.com/MarceloBravo/frontend_hitoFinal.git
+
 ## Stack
 
 - **Java 17** / Spring Boot 4.1.1
@@ -247,6 +249,8 @@ El script `data.sql` crea un usuario administrador necesario para ingresr al Bac
 | Admin Principal | admin@eshop.com | admin123 | ADMIN |
 
 > Todos los demas usuarios de prueba usan la contrasena `user123`.
+
+> Obs.: Todos los usuarios están pensados para ingresar al BackOffice de administración pero sólo el usuario ADMIN tiene permisos para gestionar usuarios
 
 ## Ejecutar tests
 
