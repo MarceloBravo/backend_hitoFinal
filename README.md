@@ -79,7 +79,37 @@ JWT_REFRESH_EXPIRATION=604800000
 JWT_COOKIE_SECURE=false
 ```
 
-> Genera un secreto valido con: `openssl rand -base64 32`
+#### Generar un JWT_SECRET valido
+
+El secreto JWT debe ser una cadena codificada en Base64 con al menos 32 bytes (256 bits) para cumple el algoritmo HS256.
+
+**Paso 1:** Abre una terminal.
+
+**Paso 2:** Ejecuta el siguiente comando para generar un secreto aleatorio de 32 bytes codificado en Base64:
+
+```bash
+openssl rand -base64 32
+```
+
+**Paso 3:** Copia la cadena de texto que se imprime en la terminal (algo similar a `aB3dE5fG7hI9jK1lM3nO5pQ7rS9tU1vW=`).
+
+**Paso 4:** Pega esa cadena como valor de `JWT_SECRET` en tu archivo `.env`:
+
+```properties
+JWT_SECRET=aB3dE5fG7hI9jK1lM3nO5pQ7rS9tU1vW=
+```
+
+> **Nota:** Si no tienes `openssl` instalado, tambien puedes generar el secreto desde la consola de Java:
+>
+> ```bash
+> java -cp . -e "java.util.Base64.getEncoder().encodeToString(java.security.SecureRandom.getInstanceStrong().generateSeed(32))"
+> ```
+>
+> O usar PowerShell (Windows):
+>
+> ```powershell
+> [Convert]::ToBase64String((1..32 | ForEach-Object { Get-Random -Minimum 0 -Maximum 256 }) -as [byte[]])
+> ```
 
 ### 4. Compilar y ejecutar
 
